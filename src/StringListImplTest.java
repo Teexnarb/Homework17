@@ -2,7 +2,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-class StringListImplTest {
+public class StringListImplTest {
 
     private final StringList stringList = new StringListImpl();
 //    public static Stream<Arguments> add() {
@@ -33,68 +33,68 @@ class StringListImplTest {
 //    }
 
     @Test
-    void testAddedUp() {
+    public void testAddedUp() {
         String expected = "one";
         assertEquals(expected, stringList.add("one"));
     }
     @Test
-    void testAddedInRange() {
+    public void testAddedInRange() {
         String expected = "two";
         assertEquals(expected, stringList.add(9, "two"));
     }
     @Test
-    void testAddedInLastIndexInRange() {
+    public void testAddedInLastIndexInRange() {
         String expected = "two";
         assertEquals(expected, stringList.add(10, "two"));
     }
     @Test
-    void set() {
+    public void set() {
         String expected = "three";
         assertEquals(expected, stringList.add(8, "three"));
     }
 
     @Test
-    void remove() {
+    public void remove() {
 
     }
 
     @Test
-    void testRemove() {
+    public void testRemove() {
     }
 
     @Test
-    void contains() {
+    public void contains() {
     }
 
     @Test
-    void indexOf() {
+    public void indexOf() {
     }
 
     @Test
-    void lastIndexOf() {
+    public void lastIndexOf() {
     }
 
     @Test
-    void get() {
+    public void get() {
     }
 
     @Test
-    void testEquals() {
+    public void testEquals() {
     }
 
     @Test
-    void size() {
+    public void size() {
     }
 
     @Test
-    void isEmpty() {
+    public void isEmpty() {
     }
 
     @Test
-    void clear() {
+    public void clear() {
     }
 
     @Test
-    void toArray() {
+    public void toArray() {
     }
 }

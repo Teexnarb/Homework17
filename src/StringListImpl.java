@@ -37,29 +37,12 @@ public class StringListImpl implements StringList {
 
     @Override
     public String add(String item) {
-//        validateItem(item);
-//        validateSize();
         storage[size++] = item;
         return item;
     }
 
     @Override
     public String add(int index, String item) {
-//        validateItem(item);
-//        validateSize();
-//        validateIndex(index);
-
-//    String[] storage = new String[]{
-//            "0 - zero",
-//            "1 - one",
-//            "2 - two",
-//            "3 - three",
-//            "4 - four",
-//            "5 - five",
-//            "6 - six",
-//            "7 - seven",
-//            "8 - eight",
-//            "9 - nine"};
 
         if (index == size) {
             storage[size++] = item;
@@ -85,20 +68,6 @@ public class StringListImpl implements StringList {
         validateItem(item);
 
         int index = indexOf(item);
-//        if (index == -1) {
-//            throw new ElementNotFoundException();
-//        }
-//
-////        if (index == size) {
-////            storage[size--] = null;
-////            return item;
-////        }
-//
-//        if (index != size) {
-//        System.arraycopy(storage, index + 1, storage, index, size - (index + 1));
-//        }
-//
-//        size--;
         return remove(index);
     }
 
